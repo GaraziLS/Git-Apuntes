@@ -23,16 +23,18 @@ It essentially unifies all the previous changes, not splitting the line in two. 
 
 Before rebase
 
+```
  A---B---C topic
          /
     D---E---F---G master
+```
 
 After rebase
-
+```
     A'--B'--C' topic
                  /
     D---E---F---G master
-
+```
 To use rebase, type git rebase + name of the branch (main, usually)
 
 # Git stash
