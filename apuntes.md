@@ -10,6 +10,7 @@
 * git pull -> Pulls remote data updated to local repo
 * .gitignore to protect content
 * remove things: rm [-f(optional, forces removal)] + file name. To remove branches locally, git branch -d + branch name. To remove remote branches, git push origin --delete + branch name
+* git log: shows log
 
 
 Best practice: delete branch once it's merged with the main branch.
@@ -57,3 +58,13 @@ Git tiene un área llamada "stash" donde puedes almacenar temporalmente una capt
 
 # Revert to last commit
 
+* git diff: shows changes. Names can be passed to select the file you want to see
+* git checkout .: removes changes
+
+# Revert a file to previous version
+
+* revert a file to a previous version: the commit id is needed, to get that type git log (j up, k down, q quit, shift g all the way down). Then type git checkout <file id> -- name of the file
+
+# Look at code in previous versions (does not revert, it lets you to see what the code looked like at a given time)
+
+* Best practice: put the code to be examined in a different branch
