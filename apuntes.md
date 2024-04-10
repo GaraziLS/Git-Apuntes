@@ -2,13 +2,14 @@
 
 * git init + name to init a local repo
 * git add, commit -m, push to add files to remote repo
-* git push -u origin main to upload updated content
+* git push -u origin main to upload updated content (also to push branches)
+* git remote add origin <host-or-remoteURL> to connect local and remote repo
 * git checkout -b to create branch & switching
 * git checkout + branch name to switch
 * git merge to merge content from branches. Merging must be done in the branch that will receive the files. Type: git merge + branch name
 * git pull -> Pulls remote data updated to local repo
-
-.gitignore to protect content
+* .gitignore to protect content
+* remove things: rm [-f(optional, forces removal)] + file name
 
 # Rebase
 
@@ -38,3 +39,15 @@ After rebase
 To use rebase, type git rebase + name of the branch (main, usually)
 
 # Git stash
+
+Git tiene un área llamada "stash" donde puedes almacenar temporalmente una captura de tus cambios sin enviarlos al repositorio. Está separada del directorio de trabajo (working directory), del área de preparación (staging area), o del repositorio.
+
+* git stash para utilizarlo
+* git apply para volver al área de trabajo
+* git stash show para mostrarlos
+* Cuando se usa un stash y para que no cause problemas, usar git stash clear.
+
+# Git fetch vs git pull
+
+* Git pull baja a local (y al área de trabajo) el contenido del repo, y además lo actualiza y une (hace un merge y un fetch a la vez) con lo que ya hay.
+* Git fetch baja a local los cambios, pero sin integrarlo a lo que ya está en local.
