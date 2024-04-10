@@ -4,12 +4,12 @@
 * git add, commit -m, push to add files to remote repo
 * git push -u origin main to upload updated content (also to push branches)
 * git remote add origin <host-or-remoteURL> to connect local and remote repo
-* git checkout -b to create branch & switching
+* git checkout -b to create branch & switching. To push a remote branch, use git push origin -u <branchname>
 * git checkout + branch name to switch
 * git merge to merge content from branches. Merging must be done in the branch that will receive the files. Type: git merge + branch name
 * git pull -> Pulls remote data updated to local repo
 * .gitignore to protect content
-* remove things: rm [-f(optional, forces removal)] + file name
+* remove things: rm [-f(optional, forces removal)] + file name. To remove branches locally, git branch -d + branch name. To remove remote branches, git push origin --delete + branch name
 
 # Rebase
 
