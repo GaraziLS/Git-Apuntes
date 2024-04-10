@@ -3,7 +3,7 @@
 * git push -u origin main to upload updated content
 * git checkout -b to create branch & switching
 * git checkout + branch name to switch
-* git merge to merge content from branches
+* git merge to merge content from branches. Merging must be done in the branch that will receive the files. Type: git merge + branch name
 * git pull -> Pulls remote data updated to local repo
 
 .gitignore to protect content
