@@ -11,6 +11,7 @@
 * .gitignore to protect content
 * remove things: rm [-f(optional, forces removal)] + file name. To remove branches locally, git branch -d + branch name. To remove remote branches, git push origin --delete + branch name
 
+
 Best practice: delete branch once it's merged with the main branch.
 
 # Rebase
@@ -53,3 +54,6 @@ Git tiene un área llamada "stash" donde puedes almacenar temporalmente una capt
 
 * Git pull baja a local (y al área de trabajo) el contenido del repo, y además lo actualiza y une (hace un merge y un fetch a la vez) con lo que ya hay.
 * Git fetch baja a local los cambios, pero sin integrarlo a lo que ya está en local.
+
+# Revert to last commit
+
