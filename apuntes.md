@@ -11,6 +11,8 @@
 * .gitignore to protect content
 * remove things: rm [-f(optional, forces removal)] + file name. To remove branches locally, git branch -d + branch name. To remove remote branches, git push origin --delete + branch name
 
+Best practice: delete branch once it's merged with the main branch.
+
 # Rebase
 
 Rebasing is the process of moving or combining a sequence of commits to a new base **commit**. (In contrast, merge deals with files)
