@@ -75,3 +75,36 @@ Git tiene un área llamada "stash" donde puedes almacenar temporalmente una capt
 # revert entire projects to a previous version
 
 * git reset --hard <id>
+
+# Revert to a previous commit 
+
+* Clone repo
+
+```
+git clone <repository-url>
+```
+
+* Change to that directory
+
+```
+cd <repository-name>
+```
+
+* Log the commits
+
+```
+git log --oneline
+```
+
+* Paste the commit
+
+```
+git checkout <commit-hash>
+```
+
+* Create a new branch and pass the commit
+
+```
+git checkout -b <new-branch-name> <commit-hash>
+```
+
